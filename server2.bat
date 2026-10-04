@@ -1,0 +1,3 @@
+﻿start "llama 8080" C:\DEV\llama.vulcan\llama-server -m C:\DEV\AI_models\llm\qwen2.5-3b-instruct-q4_k_m.gguf --host 127.0.0.1 --port 8080 -c 4096 -ngl 8
+rem start "llama 8081" C:\DEV\llama.vulcan\llama-server -m C:\DEV\AI_models\llm\qwen2.5-1.5b-instruct-q4_k_m.gguf --host 127.0.0.1 --port 8081 --embeddings --pooling mean -c 2048 -ngl 99
+start "llama 8081" C:\DEV\llama.vulcan\llama-server -m C:\DEV\AI_models\llm\user-bge-m3-q8_0.gguf --host 127.0.0.1 --port 8081 --embeddings --pooling cls -c 2048 -ngl 99
